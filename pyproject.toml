@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfq-sim"
+version = "0.1.0"
+authors = [{name = "11-qlab"}]
+description = "Superconducting Single Flux Quantum logic simulator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+keywords = ["SFQ", "superconducting", "Josephson junction", "RSJ", "rapid single flux quantum"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/11-qlab/sfq-sim"
+
+[project.scripts]
+sfq-sim = "sfq_sim.cli:main"
